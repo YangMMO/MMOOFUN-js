@@ -34,7 +34,7 @@
     
     var loader = new THREE.OBJLoader();
     // 没有材质文件，系统自动设置Phong网格材质
-    loader.load('./obj/plain.obj',function (obj) {
+    loader.load('./obj/box.obj',function (obj) {
       // 控制台查看返回结构：包含一个网格模型Mesh的组Group
       console.log(obj);
       // 查看加载器生成的材质对象：MeshPhongMaterial
