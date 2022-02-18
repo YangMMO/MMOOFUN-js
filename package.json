@@ -1,0 +1,37 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "mmoo.fun",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangMMO/index.git"
+  },
+  "keywords": [],
+  "author": "MMO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YangMMO/index/issues"
+  },
+  "homepage": "https://github.com/YangMMO/index#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "remixicon": "^2.5.0",
+    "three": "^0.137.5"
+  }
+}
