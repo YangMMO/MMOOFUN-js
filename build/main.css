@@ -2704,18 +2704,33 @@ li {
     position: absolute;
     width: 100%;
     padding: 24px 0;
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    /* background-color: #fff; */
+>>>>>>> 1
     z-index: 999;
 }
 
 .container {
     display: flex;
+<<<<<<< HEAD
     width: 1024px;
     margin: auto;
+=======
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
+>>>>>>> 1
 }
 .header .container {
     justify-content: space-between;
     align-items: flex-start;
+<<<<<<< HEAD
+=======
+    padding: 0 24px;
+>>>>>>> 1
 }
 
 

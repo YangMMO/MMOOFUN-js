@@ -36,18 +36,21 @@ li {
     position: absolute;
     width: 100%;
     padding: 24px 0;
-    background-color: #fff;
+    /* background-color: #fff; */
     z-index: 999;
 }
 
 .container {
     display: flex;
-    width: 1024px;
     margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .header .container {
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 24px;
 }
 
 
