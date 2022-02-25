@@ -27,6 +27,7 @@ li {
     list-style: none;
 }
 
+
 .canvas-frame {
 
 }
@@ -69,11 +70,12 @@ li {
 
 .box-item {
     padding: 8px 12px;
+    display: inline-block;
 }
 
-.box-item span {
+/* .box-item span {
     vertical-align: middle;
-}
+} */
 
 .box-title {
     color: #262626;
@@ -95,15 +97,22 @@ li {
     align-items: baseline;
     justify-content: flex-start; */
     color: #262626;
-    font-size: 3rem;
-    font-family: "ysbty.ttf";
+    font-size: 1rem;
+    font-weight: 600;
+    /* font-family: "ysbty.ttf"; */
 }
 
 .title img {
     /* display: block; */
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
+}
+
+.title svg {
+    height: 20px;
+    overflow: hidden;
+
 }
 
 

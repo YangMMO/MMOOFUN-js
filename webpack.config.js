@@ -1,6 +1,7 @@
 const path = require("path");
-const CopyPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");  //复制文件
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //server
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");  //分离CSS
 
 module.exports = {
   mode: 'none',
@@ -13,7 +14,7 @@ module.exports = {
     './src/js/index.js',
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: 'js/[name].bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
   },
@@ -21,7 +22,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|hdr)$/i,
@@ -41,11 +42,11 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "src/obj", to: "obj" },
-        // { from: "src/three", to: "three" },
         { from: "src/img", to: "img" },
-        { from: "src/font", to: "font" },
-        { from: "src/css", to: "css" },
+        // { from: "src/font", to: "font" },
+        // { from: "src/css", to: "css" },
       ],
     }),
+    new MiniCssExtractPlugin()
   ],
 };
